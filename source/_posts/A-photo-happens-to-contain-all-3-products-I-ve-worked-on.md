@@ -2,7 +2,7 @@
 title: 一张照片恰好照下了我参与过的三个产品
 date: 2017-04-09 22:30:10
 tags: photos
-thumbnailImage: photo-from-yu.jpg
+thumbnailImage: photo-from-yu-thumbnail.jpg
 thumbnailImagePosition: left
 ---
 
@@ -13,4 +13,5 @@ thumbnailImagePosition: left
 + Reader on Fire (Fire 平板上的“电子书”功能，和我现在 Kindle for China 组共享一套 codebase)
 + 背景屏幕上的 Matlab (我2013年在 Mathworks 实习，贡献了不少 code)
 
-![](photo-from-yu.jpg)
+点击看大图：
+{% image fancybox nocaption clear photo-from-yu.jpg 50% 50% "Photo from Dr. Yu" %}
