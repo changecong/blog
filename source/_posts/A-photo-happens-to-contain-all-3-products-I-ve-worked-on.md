@@ -1,7 +1,9 @@
 ---
 title: 一张照片恰好照下了我参与过的三个产品
 date: 2017-04-09 22:30:10
-tags: photos
+tags:
+  - photos
+  - 中文
 thumbnailImage: photo-from-yu-thumbnail.jpg
 thumbnailImagePosition: left
 ---
