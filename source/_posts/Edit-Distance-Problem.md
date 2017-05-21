@@ -4,6 +4,9 @@ date: 2017-05-20 22:34:18
 tags:
   - Algorithms
   - English
+  - Dynamic Programming
+thumbnailImage: algorithm.jpg
+thumbnailImagePosition: left
 ---
 
 "Edit Distance" is the number of steps required to convert from word A to word B. I was asked to find minimum steps in a past on-site interview as a second coding question. I've never heard about the concept of "Edit Distance" before that interview, and I wasn't able to find a good solution to that problem at that time neither.
