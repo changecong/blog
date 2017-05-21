@@ -1,7 +1,9 @@
 ---
 title: 单核处理器上的 Android
 date: 2017-04-16 21:51:19
-tags: Android
+tags:
+  - Android
+  - 中文
 thumbnailImage: thread.jpg
 thumbnailImagePosition: bottom
 ---
