@@ -10,3 +10,7 @@ thumbnailImagePosition: bottom
 
 最近需要做一些 Android 单核处理器上的 thread model 的设计，用这个博客收集一些资料并记录一些想法。
 <!-- excerpt -->
+
+很不幸，没发现什么特别好的idea。
+
+![](dispointed.png)
