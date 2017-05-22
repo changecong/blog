@@ -209,10 +209,10 @@ sharing_options:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
     # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    weibo:
+        title: "Weibo"
+        icon: "fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
     # qq:
     #     title: "QQ"
     #     icon: "fa-qq"
