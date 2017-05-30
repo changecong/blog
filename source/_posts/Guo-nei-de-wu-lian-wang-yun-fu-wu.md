@@ -1,7 +1,9 @@
 ---
 title: 国内的物联网云服务
 date: 2017-05-30 20:48:03
-tags: IoT
+tags:
+ - IoT
+ - 中文
 thumbnailImage: iot.png
 thumbnailImagePosition: left
 ---
