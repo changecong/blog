@@ -7,7 +7,9 @@ title: Zhicong Chen's Blog
 subtitle: changecong
 description:
 author: Zhicong Chen
-language: en
+language: 
+- zh-cn
+- en
 timezone: Asia/Shanghai
 
 # URL
