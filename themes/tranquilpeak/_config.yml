@@ -275,3 +275,8 @@ sharing_options:
 #        title: "Odnoklassniki"
 #        icon: "fab fa-odnoklassniki"
 #        url: "https://connect.ok.ru/offer?url={{post.permalink}}"
+    # Customize
+    linkedin:
+        title: "LinkedIn"
+        icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/shareArticle?mini=true&url={{post.permalink}}&title={{post.title}}&summary={{post.title}}&source=Zhicong%20Chen%20Blog"
