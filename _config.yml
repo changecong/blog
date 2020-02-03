@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 洗奶瓶
-subtitle: 高级奶瓶清洗工程师的博客
-description: 我是一个在北京居住的高级奶瓶清洗工程师。
-author: 奶瓶清洗工程师
+title: 洗奶瓶的生活
+subtitle: 这是一个首席奶瓶清洗工程师的博客
+description: 我是一个在北京居住的首席奶瓶清洗工程师，在洗奶瓶之余还要工作和学习。
+author: 首席奶瓶清洗工程师
 language: 
 - zh-cn
 - en
@@ -35,7 +35,7 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
-render_drafts: false
+render_drafts: true
 post_asset_folder: true
 relative_link: false
 future: true
