@@ -42,10 +42,10 @@ sidebar:
             title: global.tags
             url: /all-tags
             icon: fa fa-tags
-        archives:
-            title: global.archives
-            url: /all-archives
-            icon: fa fa-archive
+#        archives:
+#            title: global.archives
+#            url: /all-archives
+#            icon: fa fa-archive
         search:
             title: global.search
             url: /#search
@@ -57,10 +57,14 @@ sidebar:
             url: /#about
             icon: fa fa-question
     author_links:
-        github:
-            title: global.github
-            url: https://github.com/changecong
-            icon: fab fa-github
+         resume:
+             title: zhicong.resume
+             url: https://changecong.github.io/
+             icon: fa fa-address-card
+#        github:
+#            title: global.github
+#            url: https://github.com/
+#            icon: fab fa-github
 #        stack_overflow:
 #            title: global.stack_overflow
 #            url: http://stackoverflow.com/users
@@ -77,10 +81,10 @@ sidebar:
 #            title: global.google_plus
 #            url: https://plus.google.com/
 #            icon: fab fa-google-plus
-        linked_in:
-            title: global.linkedin
-            url: https://www.linkedin.com/in/zhicongchen//
-            icon: fab fa-linkedin
+#        linked_in:
+#            title: global.linkedin
+#            url: https://www.linkedin.com/profile/
+#            icon: fab fa-linkedin
 #        mail:
 #            title: global.mail
 #            url: mailto
@@ -106,7 +110,7 @@ sidebar:
 #     class: open-algolia-search
 header:
     right_link:
-        url: /#home
+        url: /#about
         icon:
         class:
 
@@ -117,8 +121,8 @@ header:
 
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location: 中国 北京 (Beijing, China)
+    email: chen.zc@outlook.com
+    location: 北京
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
@@ -150,7 +154,7 @@ author:
 # large sidebar is swiped on all lower screens
 # 5: Display header bar on all screens and large sidebar is swiped on large screen
 # 6: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 2
+sidebar_behavior: 1
 # Hide sidebar on all article page to let article take full width to improve reading, and
 # enjoy wide images and cover images. (true: enable, false: disable)
 clear_reading: true
@@ -172,9 +176,9 @@ auto_thumbnail_image: true
 # Otherwise put your image in folder `source/_images/` (development)
 # or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `your-image.png`
-cover_image: shrimp.jpg
+cover_image: ring-road-view.png
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon:
+favicon: favicon.png
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -201,6 +205,35 @@ gitment:
     client_id:
     # Your client secret:
     client_secret:
+    # The attribute of posts to use to link them to GitHub issues.
+    # See all attributes: https://hexo.io/docs/variables#Page-Variables
+    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+    post_identifier: permalink
+
+# Your Gitalk information
+# Read https://github.com/gitalk/gitalk#options to set up Gitalk
+gitalk:
+    # Switch
+    enable: false
+    # Your client ID:
+    client_id:
+    # Your client secret:
+    client_secret:
+    # Your Github ID (Github username):
+    owner:
+    # The repo to store comments:
+    repo:
+    # The attribute of posts to use to link them to GitHub issues.
+    # See all attributes: https://hexo.io/docs/variables#Page-Variables
+    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+    post_identifier: path
+    # See all options: https://github.com/gitalk/gitalk#options
+    options:
+        language: "en"
+        perPage: 10
+        distractionFreeMode: false
+        enableHotKey: true
+        pagerDirection: "first"
 
 # -------------------
 # Integrated services
@@ -211,7 +244,7 @@ google_analytics_id:
 # Your Baidu analystics web property ID : 9505a5af654a2478f93fd6c0ae4f687d
 baidu_analytics_id:
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-gravatar_email:
+gravatar_email: changecong@gmail.com
 # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
@@ -275,8 +308,3 @@ sharing_options:
 #        title: "Odnoklassniki"
 #        icon: "fab fa-odnoklassniki"
 #        url: "https://connect.ok.ru/offer?url={{post.permalink}}"
-    # Customize
-    linkedin:
-        title: "LinkedIn"
-        icon: "fab fa-linkedin"
-        url: "https://www.linkedin.com/shareArticle?mini=true&url={{post.permalink}}&title={{post.title}}&summary={{post.title}}&source=Zhicong%20Chen%20Blog"
