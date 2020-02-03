@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn,en,default">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="洗奶瓶">
+    <title>国内的物联网云服务 - 洗奶瓶</title>
+    <meta name="author" content="奶瓶清洗工程师">
+    
+    
+        <link rel="icon" href="http://changecong.github.io/blog/assets/images/favicon.png">
+    
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"奶瓶清洗工程师","sameAs":["https://changecong.github.io/"],"image":"zombie-cong.png"},"articleBody":"如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。\n\n\n区分本土和国外公司在华的服务，大部分的信息都来自服务的主页和文档。\n本土公司阿里智能（Aliplus）简介链接：https://open.aliplus.com/\n\n来自阿里巴巴的解决方案，国内的大公司，提供IoT芯片／模块，集成需要先通过认证。从文档来看，阿里采用了自己的通信协议，叫做 Alink（我尝试搜索了一下，并没有搜到细节）。需要通过认证并和阿里签约后才能从其技术团队获得文档和技术支持。\n客户端客户端上来看，阿里似乎要求移动客户端集成在一个叫做阿里小智的 App 里，但是因为 Alink 协议的原因我猜测如果想独立开发客户端会比较困难。\n结论从简单的信息来看，阿里智能可以为用户提供从开发、集成到测试，发布一站式的技术服务，非常适合大厂商或者产品成熟的厂商从传统硬件转型智能硬件。但是对于产品不成熟的初创来说，因为需要认证签约的步骤，可能不是很合适。对于希望自己推广和提供客户端的厂商不友好。\n百度IoT（Baidu IoT）简介链接：http://iot.baidu.com/\n\n来自百度的解决方案，国内大公司，主页上显示正在公测阶段。从文档来看，百度提供相对简单的设备注册和接入方式，开发文档也是公开的。百度的LBS，语音和云服务也可以相对简单的接入。\n客户端百度对于产品的客户端并没有严格限制，提供了 Android，iOS 的 SDK 和 Open API，所以无论是移动客户端还是 web 客户端都可以相对容易的集成。\n结论从网站提供的信息，百度提供的是工程师友好的解决方案，所以对于开发和集成应该更容易灵活性也更强一些。\nMore coming soon …\n外国公司在华服务More coming soon …\n","dateCreated":"2017-05-30T20:48:03+08:00","dateModified":"2020-02-01T20:20:12+08:00","datePublished":"2017-05-30T20:48:03+08:00","description":"如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。","headline":"国内的物联网云服务","image":["iot.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/"},"publisher":{"@type":"Organization","name":"奶瓶清洗工程师","sameAs":["https://changecong.github.io/"],"image":"zombie-cong.png","logo":{"@type":"ImageObject","url":"zombie-cong.png"}},"url":"http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/","keywords":"中文, IoT","thumbnailUrl":"iot.png"}</script>
+    <meta name="description" content="如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。">
+<meta name="keywords" content="中文,IoT">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="国内的物联网云服务">
+<meta property="og:url" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/index.html">
+<meta property="og:site_name" content="洗奶瓶">
+<meta property="og:description" content="如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/aliplus.jpg">
+<meta property="og:image" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/baidu-iot.png">
+<meta property="og:updated_time" content="2020-02-01T12:20:12.262Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="国内的物联网云服务">
+<meta name="twitter:description" content="如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。">
+<meta name="twitter:image" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/aliplus.jpg">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://www.gravatar.com/avatar/0911199c912d379f8eaea177b0746fe4?s=640"/>
+    
+    
+        <meta property="og:image" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/iot.png"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://changecong.github.io/blog/2017/05/30/Guo-nei-de-wu-lian-wang-yun-fu-wu/iot.png"/>
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/blog/assets/css/style-a4vqowgrgnd4tuobqr66kpxloym0wbzuquuqd8yjg3buzfhgx9l4zwakv6qt.min.css">
+    <!--STYLES END-->
+    
+
+    
+
+    
+        
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a
+            class="header-title-link"
+            href="/blog/ "
+            aria-label=""
+        >
+            洗奶瓶
+        </a>
+    </div>
+    
+        
+            <a
+                class="header-right-picture "
+                href="#about"
+                aria-label="打开链接: /blog/#about"
+            >
+        
+        
+            <img class="header-picture" src="https://www.gravatar.com/avatar/0911199c912d379f8eaea177b0746fe4?s=90" alt="作者的图片"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+    
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/blog/#about"
+                    aria-label="阅读有关作者的更多信息"
+                >
+                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/0911199c912d379f8eaea177b0746fe4?s=110" alt="作者的图片"/>
+                </a>
+                <h4 class="sidebar-profile-name">奶瓶清洗工程师</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>洗奶瓶是我每天的主要工作</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/blog/ "
+                            
+                            title="首页"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">首页</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/blog/all-categories"
+                            
+                            title="分类"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">分类</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/blog/all-tags"
+                            
+                            title="标签"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">标签</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link open-algolia-search"
+                             href="#search"
+                            
+                            title="搜索"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">搜索</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                            title="关于"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">关于</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://changecong.github.io/" target="_blank" rel="noopener" title="简历">
+                    
+                        <i class="sidebar-button-icon fa fa-address-card" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">简历</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            国内的物联网云服务
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2017-05-30T20:48:03+08:00">
+	
+		    5月 30, 2017
+    	
+    </time>
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <p>如今物联网（IoT, Internet of Things）势头正猛，抽出时间看了几本书，了解了一下物联网的概念以及软硬件上的层级结构。顺便搜索了一下有哪些物联网服务提供商。发现真的很多现成的服务可用，这里一边做调查，一边简单地记录。</p>
+<a id="more"></a>
+<h1 id="table-of-contents">目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本土公司"><span class="toc-text">本土公司</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#阿里智能（Aliplus）"><span class="toc-text">阿里智能（Aliplus）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#客户端"><span class="toc-text">客户端</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结论"><span class="toc-text">结论</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#百度IoT（Baidu-IoT）"><span class="toc-text">百度IoT（Baidu IoT）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简介-1"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#客户端-1"><span class="toc-text">客户端</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结论-1"><span class="toc-text">结论</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外国公司在华服务"><span class="toc-text">外国公司在华服务</span></a></li></ol>
+<p>区分本土和国外公司在华的服务，大部分的信息都来自服务的主页和文档。</p>
+<h2 id="本土公司"><a href="#本土公司" class="headerlink" title="本土公司"></a>本土公司</h2><h3 id="阿里智能（Aliplus）"><a href="#阿里智能（Aliplus）" class="headerlink" title="阿里智能（Aliplus）"></a>阿里智能（Aliplus）</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>链接：<a href="https://open.aliplus.com/" target="_blank" rel="noopener">https://open.aliplus.com/</a></p>
+<div class="figure nocaption" style="width:100%;"><a class="fancybox" href="aliplus.jpg" title="阿里智能交互示意图" data-caption="阿里智能交互示意图" data-fancybox="default"><img class="fig-img" src="aliplus.jpg" style="width:100%;height:100%;" alt="阿里智能交互示意图"></a></div><div style="clear:both;"></div>
+<p>来自阿里巴巴的解决方案，国内的大公司，提供IoT芯片／模块，集成需要先通过认证。从文档来看，阿里采用了自己的通信协议，叫做 Alink（我尝试搜索了一下，并没有搜到细节）。需要通过认证并和阿里签约后才能从其技术团队获得文档和技术支持。</p>
+<h4 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h4><p>客户端上来看，阿里似乎要求移动客户端集成在一个叫做阿里小智的 App 里，但是因为 Alink 协议的原因我猜测如果想独立开发客户端会比较困难。</p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>从简单的信息来看，阿里智能可以为用户提供从开发、集成到测试，发布一站式的技术服务，非常适合大厂商或者产品成熟的厂商从传统硬件转型智能硬件。但是对于产品不成熟的初创来说，因为需要认证签约的步骤，可能不是很合适。对于希望自己推广和提供客户端的厂商不友好。</p>
+<h3 id="百度IoT（Baidu-IoT）"><a href="#百度IoT（Baidu-IoT）" class="headerlink" title="百度IoT（Baidu IoT）"></a>百度IoT（Baidu IoT）</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p>链接：<a href="http://iot.baidu.com/" target="_blank" rel="noopener">http://iot.baidu.com/</a></p>
+<div class="figure nocaption" style="width:100%;"><a class="fancybox" href="baidu-iot.png" title="百度 IoT 构架图" data-caption="百度 IoT 构架图" data-fancybox="default"><img class="fig-img" src="baidu-iot.png" style="width:100%;height:100%;" alt="百度 IoT 构架图"></a></div><div style="clear:both;"></div>
+<p>来自百度的解决方案，国内大公司，主页上显示正在公测阶段。从文档来看，百度提供相对简单的设备注册和接入方式，开发文档也是公开的。百度的LBS，语音和云服务也可以相对简单的接入。</p>
+<h4 id="客户端-1"><a href="#客户端-1" class="headerlink" title="客户端"></a>客户端</h4><p>百度对于产品的客户端并没有严格限制，提供了 Android，iOS 的 SDK 和 Open API，所以无论是移动客户端还是 web 客户端都可以相对容易的集成。</p>
+<h4 id="结论-1"><a href="#结论-1" class="headerlink" title="结论"></a>结论</h4><p>从网站提供的信息，百度提供的是工程师友好的解决方案，所以对于开发和集成应该更容易灵活性也更强一些。</p>
+<p>More coming soon …</p>
+<h2 id="外国公司在华服务"><a href="#外国公司在华服务" class="headerlink" title="外国公司在华服务"></a>外国公司在华服务</h2><p>More coming soon …</p>
+
+            
+
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">标签</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/blog/tags/IoT/">IoT</a> <a class="tag tag--primary tag--small t-link" href="/blog/tags/中文/">中文</a>
+
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/blog/2017/05/21/Longest-Palindromic-Subsequence-Problem/"
+                    data-tooltip="Longest Palindromic Subsequence Problem"
+                    aria-label="下一篇: Longest Palindromic Subsequence Problem"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="目录">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2020 奶瓶清洗工程师. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/blog/2017/05/21/Longest-Palindromic-Subsequence-Problem/"
+                    data-tooltip="Longest Palindromic Subsequence Problem"
+                    aria-label="下一篇: Longest Palindromic Subsequence Problem"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="目录">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                
+
+            
+        </div>
+        
+
+
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <img id="about-card-picture" src="https://www.gravatar.com/avatar/0911199c912d379f8eaea177b0746fe4?s=110" alt="作者的图片"/>
+        
+            <h4 id="about-card-name">奶瓶清洗工程师</h4>
+        
+            <div id="about-card-bio"><p>洗奶瓶是我每天的主要工作</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>高级奶瓶清洗工程师</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                北京
+            </div>
+        
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/blog/assets/images/ring-road-view.png');"></div>
+        <!--SCRIPTS-->
+<script src="/blog/assets/js/script-6u5mieyjnrelgr21a4kzdug9tqnkpinicprkprrarurmgmfvjhsdcvb0w2rz.min.js"></script>
+<!--SCRIPTS END-->
+
+
+    
+
+
+
+
+    </body>
+</html>
