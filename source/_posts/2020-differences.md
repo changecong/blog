@@ -2,12 +2,13 @@
 title: 2020 一切变得不同
 tags:
   - 随笔
-date: 2020-02-03 16:51:15
 thumbnailImage: banner.png
 thumbnailImagePosition: bottom
 categories: 生活
 keywords:
   - 2020
+abbrlink: 35187
+date: 2020-02-03 16:51:15
 ---
 
 
