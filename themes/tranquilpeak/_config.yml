@@ -94,6 +94,11 @@ sidebar:
 #            title: global.rss
 #            url: /atom.xml
 #            icon: fa fa-rss
+    page:
+        work-life:
+            title: zhicong.work-life
+            url: /posts/14354/
+            icon: fa fa-briefcase
 
 
 # --------------------
