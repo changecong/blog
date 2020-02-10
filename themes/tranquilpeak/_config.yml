@@ -287,11 +287,15 @@ sharing_options:
 #    google_plus:
 #        icon: "fab fa-google-plus"
 #        url: "https://plus.google.com/share?url={{post.permalink}}"
+    linkedin:
+        title: "LinkedIn"
+        icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/shareArticle?mini=true&url={{post.permalink}}"
     # Asian social networks
-#    weibo:
-#        title: "Weibo"
-#        icon: "fab fa-weibo"
-#        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    weibo:
+        title: "Weibo"
+        icon: "fab fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
 #    qq:
 #        title: "QQ"
 #        icon: "fab fa-qq"
