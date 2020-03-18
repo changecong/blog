@@ -10,23 +10,23 @@
     <meta name="author" content="首席奶瓶清洗工程师">
     
     
-        <link rel="icon" href="http://changecong.github.io/blog/assets/images/favicon.png">
+        <link rel="icon" href="http://changecong.com/blog/assets/images/favicon.png">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"首席奶瓶清洗工程师","sameAs":["https://changecong.github.io/","/#about"],"image":"zombie-cong.png"},"articleBody":"\n系列文章列表在页面最下方。\n\n从我的第一份实习工作开始，Code Review 这件事情对我来说就像人应该吃饭一般天经地义。\nCode Review 字面意思就是”代码” + “评论”，在代码上提供自己的评论和意见。我个人觉得特别难翻译，回国这么久了我依然用英文称呼这件事情。而且实际工作中会有各种各样的应用场景可以映射到不同的翻译，比如说：\n\n同事的代码在提交进产品之前，由另一位或者多位同事看一遍，提出整改意见，讨论，修改最终所有人都同意不需要再修改后再提交代码。我倾向把这类 Code Review 翻译成代码互查。\n引入来自外部的代码（如开源代码，非公司内部工具）前，在条件允许的情况下需要 Review 全部代码，往往重点在代码安全性上而非业务逻辑，并且通常由公司内部的安全工程师来完成。这类 Code Review 我称为代码审查。\n产品上线前，再做一次自动或手动的 Review，往往关注的是代码是否符合公司统一的安全标准，在我工作的公司这部分工作一般是由拿到特殊资质的员工来完成。这类 Code Review 我叫它代码扫描。\n\n我的工作中最常接触的就是代码互查，另外作为当前公司的 Security Certifier 我偶尔也会承接代码扫描的工作。可以负责任地说，我所有进入产品的代码都不是我自己拍脑袋写出来的，全部代码至少有另外一个人看过并且可能提供了宝贵的修改意见。与此同时，我也提供了大量的评论和反馈给被人的代码。对我来说，针对代码本身的讨论是一件非常有意思的事情。\n好的 Code Review 绝对可以提高并保持代码质量。一个很好的证据就是其可以大幅降低一个反应代码质量低下的重要指标 WTFs per minute。\nCode Quality Measurement\n但是多年的工作经验告诉我，\n\n代码互查并不是绝对的好，有利也有弊。\n代码互查也不是一件简单的事情，好的代码互查能力来自于大量的技巧学习。\n并不是所有人都有机会在工作中接触到代码互查这件有趣的事情。\n\n因此我想写一些列关于代码互查的文章，将我的想法和经验分享出来。","dateCreated":"2020-03-18T16:18:21+08:00","dateModified":"2020-03-18T16:26:04+08:00","datePublished":"2020-03-18T16:18:21+08:00","description":"我想写一系列文章记录我在工作中收到、看到、或者提供给别人代码的评论和建议（我统称这类 Code Review 为代码互查）。这类文章不太需要动脑子寻找素材，而且素材每天都在增加。","headline":"代码互查系列","image":["code-review-wtf.jpg"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://changecong.github.io/blog/posts/24395/"},"publisher":{"@type":"Organization","name":"首席奶瓶清洗工程师","sameAs":["https://changecong.github.io/","/#about"],"image":"zombie-cong.png","logo":{"@type":"ImageObject","url":"zombie-cong.png"}},"url":"http://changecong.github.io/blog/posts/24395/","thumbnailUrl":"code-review-wtf.jpg"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"首席奶瓶清洗工程师","sameAs":["https://changecong.github.io/","/#about"],"image":"zombie-cong.png"},"articleBody":"\n系列文章列表在页面最下方。\n\n从我的第一份实习工作开始，Code Review 这件事情对我来说就像人应该吃饭一般天经地义。\nCode Review 字面意思就是”代码” + “评论”，在代码上提供自己的评论和意见。我个人觉得特别难翻译，回国这么久了我依然用英文称呼这件事情。而且实际工作中会有各种各样的应用场景可以映射到不同的翻译，比如说：\n\n同事的代码在提交进产品之前，由另一位或者多位同事看一遍，提出整改意见，讨论，修改最终所有人都同意不需要再修改后再提交代码。我倾向把这类 Code Review 翻译成代码互查。\n引入来自外部的代码（如开源代码，非公司内部工具）前，在条件允许的情况下需要 Review 全部代码，往往重点在代码安全性上而非业务逻辑，并且通常由公司内部的安全工程师来完成。这类 Code Review 我称为代码审查。\n产品上线前，再做一次自动或手动的 Review，往往关注的是代码是否符合公司统一的安全标准，在我工作的公司这部分工作一般是由拿到特殊资质的员工来完成。这类 Code Review 我叫它代码扫描。\n\n我的工作中最常接触的就是代码互查，另外作为当前公司的 Security Certifier 我偶尔也会承接代码扫描的工作。可以负责任地说，我所有进入产品的代码都不是我自己拍脑袋写出来的，全部代码至少有另外一个人看过并且可能提供了宝贵的修改意见。与此同时，我也提供了大量的评论和反馈给被人的代码。对我来说，针对代码本身的讨论是一件非常有意思的事情。\n好的 Code Review 绝对可以提高并保持代码质量。一个很好的证据就是其可以大幅降低一个反应代码质量低下的重要指标 WTFs per minute。\nCode Quality Measurement\n但是多年的工作经验告诉我，\n\n代码互查并不是绝对的好，有利也有弊。\n代码互查也不是一件简单的事情，好的代码互查能力来自于大量的技巧学习。\n并不是所有人都有机会在工作中接触到代码互查这件有趣的事情。\n\n因此我想写一些列关于代码互查的文章，将我的想法和经验分享出来。","dateCreated":"2020-03-18T16:18:21+08:00","dateModified":"2020-03-18T16:26:04+08:00","datePublished":"2020-03-18T16:18:21+08:00","description":"我想写一系列文章记录我在工作中收到、看到、或者提供给别人代码的评论和建议（我统称这类 Code Review 为代码互查）。这类文章不太需要动脑子寻找素材，而且素材每天都在增加。","headline":"代码互查系列","image":["code-review-wtf.jpg"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://changecong.com/blog/posts/24395/"},"publisher":{"@type":"Organization","name":"首席奶瓶清洗工程师","sameAs":["https://changecong.github.io/","/#about"],"image":"zombie-cong.png","logo":{"@type":"ImageObject","url":"zombie-cong.png"}},"url":"http://changecong.com/blog/posts/24395/","thumbnailUrl":"code-review-wtf.jpg"}</script>
     <meta name="description" content="我想写一系列文章记录我在工作中收到、看到、或者提供给别人代码的评论和建议（我统称这类 Code Review 为代码互查）。这类文章不太需要动脑子寻找素材，而且素材每天都在增加。">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="代码互查系列">
-<meta property="og:url" content="http://changecong.github.io/blog/posts/24395/index.html">
+<meta property="og:url" content="http://changecong.com/blog/posts/24395/index.html">
 <meta property="og:site_name" content="洗奶瓶的生活">
 <meta property="og:description" content="我想写一系列文章记录我在工作中收到、看到、或者提供给别人代码的评论和建议（我统称这类 Code Review 为代码互查）。这类文章不太需要动脑子寻找素材，而且素材每天都在增加。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://changecong.github.io/blog/posts/24395/code-review-wtf.jpg">
+<meta property="og:image" content="http://changecong.com/blog/posts/24395/code-review-wtf.jpg">
 <meta property="og:updated_time" content="2020-03-18T08:26:04.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="代码互查系列">
 <meta name="twitter:description" content="我想写一系列文章记录我在工作中收到、看到、或者提供给别人代码的评论和建议（我统称这类 Code Review 为代码互查）。这类文章不太需要动脑子寻找素材，而且素材每天都在增加。">
-<meta name="twitter:image" content="http://changecong.github.io/blog/posts/24395/code-review-wtf.jpg">
+<meta name="twitter:image" content="http://changecong.com/blog/posts/24395/code-review-wtf.jpg">
     
     
         
@@ -35,8 +35,8 @@
         <meta property="og:image" content="https://www.gravatar.com/avatar/0911199c912d379f8eaea177b0746fe4?s=640"/>
     
     
-        <meta property="og:image" content="http://changecong.github.io/blog/posts/24395/code-review-wtf.jpg"/>
-        <meta class="swiftype" name="image" data-type="enum" content="http://changecong.github.io/blog/posts/24395/code-review-wtf.jpg"/>
+        <meta property="og:image" content="http://changecong.com/blog/posts/24395/code-review-wtf.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://changecong.com/blog/posts/24395/code-review-wtf.jpg"/>
     
     
     
@@ -323,7 +323,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.github.io/blog/posts/24395/"
+                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.com/blog/posts/24395/"
                     title="分享到 LinkedIn"
                     aria-label="分享到 LinkedIn"
                 >
@@ -336,7 +336,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.github.io/blog/posts/24395/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.com/blog/posts/24395/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -422,7 +422,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.github.io/blog/posts/24395/"
+                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.com/blog/posts/24395/"
                     title="分享到 LinkedIn"
                     aria-label="分享到 LinkedIn"
                 >
@@ -435,7 +435,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.github.io/blog/posts/24395/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.com/blog/posts/24395/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -469,7 +469,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.github.io/blog/posts/24395/"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://changecong.com/blog/posts/24395/"
                         aria-label="分享到 LinkedIn"
                     >
                         <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 LinkedIn</span>
@@ -482,7 +482,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.github.io/blog/posts/24395/"
+                        href="http://service.weibo.com/share/share.php?&amp;title=http://changecong.com/blog/posts/24395/"
                         aria-label="分享到 Weibo"
                     >
                         <i class="fab fa-weibo" aria-hidden="true"></i><span>分享到 Weibo</span>
