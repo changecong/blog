@@ -99,6 +99,10 @@ sidebar:
             title: zhicong.work-life
             url: /posts/14354/
             icon: fa fa-briefcase
+        code-review:
+            title: zhicong.code-review
+            url: /posts/24395/
+            icon: fa fa-code
 
 
 # --------------------
